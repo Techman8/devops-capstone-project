@@ -22,7 +22,7 @@ class TestAccount(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        """This runs once before the entire test suite"""
+        """Run once before all tests"""
         app.config["TESTING"] = True
         app.config["DEBUG"] = False
         app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_URI
